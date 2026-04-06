@@ -51,9 +51,11 @@ const recentActivity = async (userId) => {
     .limit(5);
 };
 
+
 module.exports = {
   getSummary,
   categoryTotals,
   monthlyTrends,
   recentActivity,
+ 
 };

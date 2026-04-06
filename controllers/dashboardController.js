@@ -2,6 +2,7 @@
 
 const Finance = require("../models/financeModel");
 const mongoose = require("mongoose");
+const { getSummary} = require("../services/dashboardService");
 
 // GET /api/dashboard/summary
 const summary = async (req, res) => {
@@ -54,5 +55,5 @@ const summary = async (req, res) => {
   }
 };
 
-module.exports = { summary };
+module.exports = { summary,};
 
